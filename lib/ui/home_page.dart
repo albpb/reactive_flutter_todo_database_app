@@ -22,7 +22,7 @@ class HomePage extends StatelessWidget {
         systemNavigationBarIconBrightness: Brightness.dark,
         statusBarBrightness: Brightness.dark));
     return Scaffold(
-        resizeToAvoidBottomPadding: false,
+        resizeToAvoidBottomInset: false,
         body: SafeArea(
             child: Container(
                 color: Colors.white,
@@ -338,7 +338,7 @@ class HomePage extends StatelessWidget {
                           onTap: () {
                             //Reverse the value
                             todo.isDone = !todo.isDone;
-                          /*
+                            /*
                             Another magic.
                             This will update Todo isDone with either
                             completed or not
